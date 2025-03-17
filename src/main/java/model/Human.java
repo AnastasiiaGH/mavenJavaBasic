@@ -1,6 +1,7 @@
 package model;
-
-public abstract class Human {
+import java.util.Objects;
+import com.google.gson.annotations.SerializedName;
+public class Human {
     private String firstName;
     private String lastName;
     private String patronymic;
@@ -14,6 +15,27 @@ public abstract class Human {
     }
 
     // Геттери та сеттери
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Human human = (Human) o;
+        return Objects.equals(firstName, human.firstName) &&
+                Objects.equals(lastName, human.lastName) &&
+                Objects.equals(patronymic, human.patronymic) &&
+                sex == human.sex;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(firstName, lastName, patronymic, sex);
+    }
+    public static class Student extends Human {
+        public Student(String firstName, String lastName, String patronymic, Sex sex) {
+            super(firstName, lastName, patronymic, sex);
+        }
+    }
     public String getFirstName() {
         return firstName;
     }

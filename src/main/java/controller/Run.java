@@ -12,7 +12,6 @@ public class Run {
         StudentCreator studentCreator = new StudentCreator("Іван", "Петров", "Іванович", Sex.MALE);
         Student student1 = studentCreator.create();
         Student student2 = new StudentCreator("Анастасія", "Чернявська", "Юріївна", Sex.FEMALE).create();
-
         // Створення групи
         GroupCreator groupCreator = new GroupCreator("Група 122-21-2", student1, List.of(student1, student2));
         Group group = groupCreator.create();

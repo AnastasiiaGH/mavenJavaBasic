@@ -1,0 +1,56 @@
+{
+  "name": "НТУ Дніпровська політехніка",
+  "head": {
+    "firstName": "Іван",
+    "lastName": "Петров",
+    "patronymic": "Олександрович",
+    "sex": "MALE"
+  },
+  "faculties": [
+    {
+      "name": "Факультет інформаційних технологій",
+      "head": {
+        "firstName": "Іван",
+        "lastName": "Петров",
+        "patronymic": "Олександрович",
+        "sex": "MALE"
+      },
+      "departments": [
+        {
+          "name": "Кафедра програмного забезпечення комп\u0027ютерних систем",
+          "head": {
+            "firstName": "Іван",
+            "lastName": "Петров",
+            "patronymic": "Олександрович",
+            "sex": "MALE"
+          },
+          "groups": [
+            {
+              "name": "Група 122-21-2",
+              "head": {
+                "firstName": "Іван",
+                "lastName": "Петров",
+                "patronymic": "Олександрович",
+                "sex": "MALE"
+              },
+              "students": [
+                {
+                  "firstName": "Іван",
+                  "lastName": "Петров",
+                  "patronymic": "Іванович",
+                  "sex": "MALE"
+                },
+                {
+                  "firstName": "Анастасія",
+                  "lastName": "Чернявська",
+                  "patronymic": "Юріївна",
+                  "sex": "FEMALE"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
